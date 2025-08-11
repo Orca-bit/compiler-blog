@@ -1,5 +1,5 @@
 # Hugo configuration file
-title: My Site
+title: GPU & ASIC 编译器技术博客
 
 # import hextra as module
 module:
@@ -18,29 +18,36 @@ markup:
 
 menu:
   main:
-    - name: Docs
+    - name: 文档
       pageRef: /docs
       weight: 1
-    - name: About
-      pageRef: /about
+    - name: MLIR
+      pageRef: /docs/mlir
       weight: 2
-    - name: Contact ↗
-      url: "https://github.com/imfing"
+    - name: LLVM
+      pageRef: /docs/llvm
       weight: 3
-    - name: Search
+    - name: GPU编译器
+      pageRef: /docs/gpu-compiler
       weight: 4
+    - name: ASIC编译器
+      pageRef: /docs/asic-compiler
+      weight: 5
+    - name: 硬件架构
+      pageRef: /docs/hardware
+      weight: 6
+    - name: 关于
+      pageRef: /about
+      weight: 7
+    - name: 搜索
+      weight: 8
       params:
         type: search
     - name: GitHub
-      weight: 5
-      url: "https://github.com/imfing/hextra-starter-template"
+      weight: 9
+      url: "https://github.com/"
       params:
         icon: github
-    - name: Twitter
-      weight: 6
-      url: "https://twitter.com/"
-      params:
-        icon: x-twitter
 
 params:
   navbar:
