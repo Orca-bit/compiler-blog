@@ -1,83 +1,107 @@
-# Hextra Starter Template
+# 编译器技术博客
 
-[![Deploy Hugo site to Pages](https://github.com/imfing/hextra-starter-template/actions/workflows/pages.yaml/badge.svg)](https://github.com/imfing/hextra-starter-template/actions/workflows/pages.yaml)
-[![Netlify Status](https://api.netlify.com/api/v1/badges/6e83fd88-5ffe-4808-9689-c0f3b100bfe3/deploy-status)](https://app.netlify.com/sites/hextra-starter-template/deploys)
-![Vercel Deployment Status](https://img.shields.io/github/deployments/imfing/hextra-starter-template/production?logo=vercel&logoColor=white&label=vercel&labelColor=black&link=https%3A%2F%2Fhextra-starter-template.vercel.app%2F)
+一个专注于现代编译器技术的技术博客，涵盖 MLIR、LLVM、GPU 编译器、ASIC 编译器以及硬件架构等前沿技术领域。
 
+## 🚀 项目简介
 
-🐣 Minimal template for getting started with [Hextra](https://github.com/imfing/hextra)
+本博客致力于深入探讨现代编译器技术的理论与实践，为编译器开发者、硬件工程师和研究人员提供高质量的技术内容。我们专注于以下几个核心领域：
 
-![hextra-template](https://github.com/imfing/hextra-starter-template/assets/5097752/c403b9a9-a76c-47a6-8466-513d772ef0b7)
+- **MLIR (Multi-Level Intermediate Representation)** - 多级中间表示技术
+- **LLVM** - 编译器基础设施
+- **GPU 编译器** - 并行计算编译技术
+- **ASIC 编译器** - 专用芯片编译器
+- **硬件架构** - 底层硬件设计与优化
 
-[🌐 Demo ↗](https://imfing.github.io/hextra-starter-template/)
+## 📚 内容结构
 
-## Quick Start
+### MLIR 技术
+- MLIR 基本概念与设计理念
+- Dialect 系统设计与实现
+- Operations、Types & Attributes
+- Regions & Blocks
+- Pass 系统与优化框架
 
-Use this template to create your own repository:
+### LLVM 技术
+- LLVM 架构概览
+- LLVM IR 中间表示
+- Pass 系统与优化技术
+- 后端代码生成
+- LLVM 工具链
 
-<img src="https://docs.github.com/assets/cb-77734/mw-1440/images/help/repository/use-this-template-button.webp" width=400 />
+### GPU 编译器
+- CUDA 编译器技术
+- OpenCL 跨平台编译
+- ROCm AMD GPU 编译
+- GPU 性能优化
+- 内存管理与性能分析
 
-You can also quickly start developing using the following online development environment:
+### ASIC 编译器
+- 高层次综合 (HLS)
+- 领域特定架构 (DSA)
+- 资源调度与优化
+- 设计验证方法
+- 实际项目案例分析
 
-- [GitHub Codespaces](https://github.com/codespaces) 
-    
-    [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/imfing/hextra-starter-template)
+### 硬件架构
+- GPU 架构分析
+- AI 加速器 (TPU、NPU)
+- FPGA 可重构计算
+- 内存系统设计
+- 片上网络与互连
 
-    Create a new codespace and follow the [Local Development](#local-development) to launch the preview
+## 🛠️ 技术栈
 
-- [Gitpod](https://gitpod.io)
+- **静态站点生成器**: Hugo
+- **主题**: Hextra
+- **部署**: GitHub Pages / Netlify
+- **版本控制**: Git
 
-    [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/imfing/hextra-starter-template)
+## 🏃‍♂️ 快速开始
 
+### 环境要求
 
-## Deployment
+- Go 1.19+
+- Hugo Extended 0.112.0+
+- Git
 
-### GitHub Pages
+### 本地运行
 
-A GitHub Actions workflow is provided in [`.github/workflows/pages.yaml`](./.github/workflows/pages.yaml) to [publish to GitHub Pages](https://github.blog/changelog/2022-07-27-github-pages-custom-github-actions-workflows-beta/) for free. 
-
-For details, see [Publishing with a custom GitHub Actions workflow](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site#publishing-with-a-custom-github-actions-workflow).
-
-Note: in the settings, make sure to set the Pages deployment source to **GitHub Actions**:
-
-<img src="https://github.com/imfing/hextra-starter-template/assets/5097752/99676430-884e-42ab-b901-f6534a0d6eee" width=600 />
-
-[Run the workflow manually](https://docs.github.com/en/actions/using-workflows/manually-running-a-workflow) if it's not triggered automatically.
-
-### Netlify
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/imfing/hextra-starter-template)
-
-### Vercel
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fimfing%2Fhextra-starter-template&env=HUGO_VERSION)
-
-Override the configuration:
-
-<img src="https://github.com/imfing/hextra-starter-template/assets/5097752/e2e3cecd-c884-47ec-b064-14f896fee08d" width=600 />
-
-## Local Development
-
-Pre-requisites: [Hugo](https://gohugo.io/getting-started/installing/), [Go](https://golang.org/doc/install) and [Git](https://git-scm.com)
-
-```shell
-# Clone the repo
-git clone https://github.com/imfing/hextra-starter-template.git
-
-# Change directory
-cd hextra-starter-template
-
-# Start the server
-hugo mod tidy
-hugo server --logLevel debug --disableFastRender -p 1313
+1. 克隆仓库
+```bash
+git clone <repository-url>
+cd compiler-blog
 ```
 
-### Update theme
-
-```shell
-hugo mod get -u
-hugo mod tidy
+2. 安装依赖
+```bash
+go mod tidy
 ```
 
-See [Update modules](https://gohugo.io/hugo-modules/use-modules/#update-modules) for more details.
+3. 启动开发服务器
+```bash
+hugo server -D
+```
 
+4. 访问 http://localhost:1313 查看博客
+
+### 构建生产版本
+
+```bash
+hugo --minify
+```
+
+## 🎯 目标读者
+
+- 编译器开发工程师
+- 硬件架构师
+- GPU/ASIC 开发者
+- 高性能计算研究人员
+- 计算机科学学生和研究者
+
+## 📄 许可证
+
+本项目采用 [MIT License](LICENSE) 许可证。
+
+---
+
+**让我们一起探索编译器技术的无限可能！** 🚀

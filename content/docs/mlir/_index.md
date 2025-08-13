@@ -4,14 +4,12 @@ weight: 1
 next: mlir/introduction
 ---
 
-# MLIR (Multi-Level Intermediate Representation)
-
 MLIR 是一个现代化的编译器基础设施，旨在解决传统编译器在处理多层抽象时的挑战。它提供了一个灵活的框架来定义和操作多级中间表示。
 
 ## 📋 章节概览
 
 {{< cards >}}
-  {{< card link="mlir/introduction" title="MLIR 简介" icon="book-open" subtitle="基本概念与设计理念" >}}
+  {{< card link="introduction" title="MLIR 简介" icon="book-open" subtitle="基本概念与设计理念" >}}
   {{< card link="mlir/dialects" title="Dialect 系统" icon="puzzle" subtitle="方言系统设计与实现" >}}
   {{< card link="mlir/operations" title="Operations" icon="cog" subtitle="操作定义与使用" >}}
   {{< card link="mlir/types-attributes" title="Types & Attributes" icon="tag" subtitle="类型系统与属性" >}}
@@ -63,26 +61,52 @@ func.func @hello() {
 ## 📚 核心概念预览
 
 ### Dialect 层次结构
-```
-High-Level Dialects
-├── TensorFlow Dialect
-├── Torch Dialect
-└── Linalg Dialect
 
-Mid-Level Dialects  
-├── Affine Dialect
-├── SCF Dialect
-└── Vector Dialect
-
-Low-Level Dialects
-├── Arith Dialect
-├── MemRef Dialect
-└── LLVM Dialect
+```mermaid
+graph LR
+    A["MLIR Dialect 层次结构"] --> B["High-Level Dialects"]
+    A --> C["Mid-Level Dialects"]
+    A --> D["Low-Level Dialects"]
+    
+    B --> B1["TensorFlow Dialect"]
+    B --> B2["Torch Dialect"]
+    B --> B3["Linalg Dialect"]
+    
+    C --> C1["Affine Dialect"]
+    C --> C2["SCF Dialect"]
+    C --> C3["Vector Dialect"]
+    
+    D --> D1["Arith Dialect"]
+    D --> D2["MemRef Dialect"]
+    D --> D3["LLVM Dialect"]
+    
+    classDef highLevel fill:#e3f2fd,stroke:#1976d2,stroke-width:2px
+    classDef midLevel fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px
+    classDef lowLevel fill:#fff3e0,stroke:#f57c00,stroke-width:2px
+    classDef root fill:#e8f5e8,stroke:#388e3c,stroke-width:3px
+    
+    class A root
+    class B,B1,B2,B3 highLevel
+    class C,C1,C2,C3 midLevel
+    class D,D1,D2,D3 lowLevel
 ```
 
 ### 典型的 Lowering 流程
-```
-TensorFlow → Linalg → Affine → SCF → LLVM IR → Machine Code
+
+```mermaid
+flowchart LR
+    A[TensorFlow] --> B[Linalg]
+    B --> C[Affine]
+    C --> D[SCF]
+    D --> E[LLVM IR]
+    E --> F[Machine Code]
+    
+    style A fill:#e1f5fe
+    style B fill:#f3e5f5
+    style C fill:#fff3e0
+    style D fill:#e8f5e8
+    style E fill:#fff8e1
+    style F fill:#ffebee
 ```
 
 ## 🌟 MLIR 的优势
@@ -99,3 +123,8 @@ TensorFlow → Linalg → Affine → SCF → LLVM IR → Machine Code
 - [MLIR 语言参考](https://mlir.llvm.org/docs/LangRef/)
 - [MLIR Dialect 手册](https://mlir.llvm.org/docs/Dialects/)
 - [MLIR 教程](https://mlir.llvm.org/docs/Tutorials/)
+
+{{< cards >}}
+  {{< card link="../" title="返回文档首页" icon="arrow-left" subtitle="回到技术文档主页" >}}
+  {{< card link="introduction" title="开始学习" icon="arrow-right" subtitle="MLIR 简介" >}}
+{{< /cards >}}
