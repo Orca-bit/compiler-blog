@@ -1,8 +1,8 @@
 ---
 title: MLIR 简介
 weight: 1
-prev: mlir/_index
-next: mlir/dialects
+prev: docs/mlir/_index
+next: dialects
 ---
 
 MLIR (Multi-Level Intermediate Representation) 是由 Google 开发的一个现代化编译器基础设施，旨在解决传统编译器在处理多层次抽象时面临的挑战。MLIR 提供了一个统一的框架，能够在不同的抽象层次之间进行有效的转换和优化。
@@ -131,8 +131,3 @@ MLIR 提供了丰富的类型系统：
 MLIR 代表了编译器基础设施的新一代发展方向，它通过 Dialect 系统和多层次抽象，为现代编译器设计提供了强大而灵活的框架。无论是机器学习、高性能计算还是硬件设计，MLIR 都展现出了巨大的潜力和价值。
 
 在接下来的章节中，我们将深入探讨 MLIR 的各个组件，包括 Dialect 系统、Operation 定义、类型系统等，帮助您全面掌握这一强大的编译器技术。
-
-{{< cards >}}
-  {{< card link="../mlir/" title="返回 MLIR 主页" icon="arrow-left" subtitle="回到 MLIR 章节首页" >}}
-  {{< card link="dialects" title="下一章：Dialect 系统" icon="arrow-right" subtitle="深入了解方言系统" >}}
-{{< /cards >}}

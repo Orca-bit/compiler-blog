@@ -1,7 +1,8 @@
 ---
 title: MLIR 多级中间表示
 weight: 1
-next: mlir/introduction
+prev: docs/_index
+next: introduction
 ---
 
 MLIR 是一个现代化的编译器基础设施，旨在解决传统编译器在处理多层抽象时的挑战。它提供了一个灵活的框架来定义和操作多级中间表示。
@@ -10,7 +11,7 @@ MLIR 是一个现代化的编译器基础设施，旨在解决传统编译器在
 
 {{< cards >}}
   {{< card link="introduction" title="MLIR 简介" icon="book-open" subtitle="基本概念与设计理念" >}}
-  {{< card link="mlir/dialects" title="Dialect 系统" icon="puzzle" subtitle="方言系统设计与实现" >}}
+  {{< card link="dialects" title="Dialect 系统" icon="puzzle" subtitle="方言系统设计与实现" >}}
   {{< card link="mlir/operations" title="Operations" icon="cog" subtitle="操作定义与使用" >}}
   {{< card link="mlir/types-attributes" title="Types & Attributes" icon="tag" subtitle="类型系统与属性" >}}
   {{< card link="mlir/regions-blocks" title="Regions & Blocks" icon="cube" subtitle="区域与基本块" >}}
@@ -123,8 +124,3 @@ flowchart LR
 - [MLIR 语言参考](https://mlir.llvm.org/docs/LangRef/)
 - [MLIR Dialect 手册](https://mlir.llvm.org/docs/Dialects/)
 - [MLIR 教程](https://mlir.llvm.org/docs/Tutorials/)
-
-{{< cards >}}
-  {{< card link="../" title="返回文档首页" icon="arrow-left" subtitle="回到技术文档主页" >}}
-  {{< card link="introduction" title="开始学习" icon="arrow-right" subtitle="MLIR 简介" >}}
-{{< /cards >}}
