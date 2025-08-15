@@ -21,31 +21,16 @@ menu:
     - name: 文档
       pageRef: /docs
       weight: 1
-    - name: MLIR
-      pageRef: /docs/mlir
-      weight: 2
-    - name: LLVM
-      pageRef: /docs/llvm
-      weight: 3
-    - name: GPU编译器
-      pageRef: /docs/gpu-compiler
-      weight: 4
-    - name: ASIC编译器
-      pageRef: /docs/asic-compiler
-      weight: 5
-    - name: 硬件架构
-      pageRef: /docs/hardware
-      weight: 6
     - name: 关于
       pageRef: /about
-      weight: 7
+      weight: 2
     - name: 搜索
-      weight: 8
+      weight: 3
       params:
         type: search
     - name: GitHub
-      weight: 9
-      url: "https://github.com/"
+      weight: 4
+      url: "https://github.com/Orca-bit/compiler-blog"
       params:
         icon: github
 

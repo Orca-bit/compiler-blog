@@ -2,7 +2,7 @@
 title: "Dialect 系统"
 weight: 2
 prev: introduction
-next: operations
+next: linalg
 ---
 
 Dialect 是 MLIR 的核心概念之一，它提供了一种可扩展的方式来定义特定领域的操作、类型和属性。通过 Dialect 系统，MLIR 能够支持从高级抽象到低级实现的各种表示。
