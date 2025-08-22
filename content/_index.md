@@ -1,5 +1,5 @@
 ---
-title: GPU & ASIC 编译器技术博客
+title: GPU & ASIC 编译器
 toc: false
 ---
 

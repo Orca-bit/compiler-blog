@@ -2,6 +2,7 @@
 title: "Linalg Dialect"
 weight: 1
 prev: docs/mlir/dialects/_index
+next: affine
 ---
 
 Linalg (Linear Algebra) Dialect 是 MLIR 中用于表示线性代数操作的高级方言。它提供了一种结构化的方式来表示张量操作，是连接高级机器学习框架和低级优化的重要桥梁。
